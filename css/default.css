@@ -35,7 +35,7 @@ body {
   padding-bottom: 275px;
 }
 a {
-  color:#d53535;
+  color:#012847;
   text-decoration:underline;
 }
 p {
@@ -179,21 +179,21 @@ p {
   background: url("../img/bg-menu.png") no-repeat scroll -289px -22px transparent;
   width: 42px;
 }
-#menu #nav-groomsment a {
-  background: url("../img/bg-menu.png") no-repeat scroll -380px -22px transparent;
-  width: 68px;
-}
-#menu #nav-bridesmaid a {
-  background: url("../img/bg-menu.png") no-repeat scroll -497px -22px transparent;
-  width: 70px;
-}
 #menu #nav-info a {
-  background: url("../img/bg-menu.png") no-repeat scroll -611px -22px transparent;
+  background: url("../img/bg-menu.png") no-repeat scroll -380px -22px transparent;
   width: 102px;
 }
+#menu #nav-whyOBX a {
+  background: url("../img/bg-menu.png") no-repeat scroll -497px -22px transparent;
+  width: 68px;
+}
 #menu #nav-gifts a {
-  background: url("../img/bg-menu.png") no-repeat scroll -762px -22px transparent;
+  background: url("../img/bg-menu.png") no-repeat scroll -611px -22px transparent;
   width: 29px;
+}
+#menu #nav-bridesmaid a {
+  background: url("../img/bg-menu.png") no-repeat scroll -762px -22px transparent;
+  width: 70px;
 }
 #menu #nav-rsvp a {
   background: url("../img/bg-menu.png") no-repeat scroll -840px -22px transparent;
@@ -278,7 +278,7 @@ p {
   position:relative;
 }
 #section-1 {
-  background: url("../img/banner-2.jpg") no-repeat scroll center 67px #CFCFCF;
+  background: url("../img/lighthouse_banner_edited.jpg") no-repeat scroll center 80px #CFCFCF;
   height: 563px;
   padding-top: 67px;
 
@@ -317,98 +317,8 @@ p {
 }
 
 
-/* Groomsmen & Bridesmaids */
-#section-4 h2,
-#section-5 h2 {
-  left: 400px;
-  position: absolute;
-  top:0;
-}
-#section-4 .slideshow,
-#section-5 .slideshow {
-  height: 475px;
-  margin: 0 auto;
-  padding: 0 20px 0 10px;
-  width: 770px;
-}
-#section-4 .slideshow li,
-#section-5 .slideshow li {
-  height: 475px;
-  list-style: none outside none;
-  position:relative;
-  width: 770px;
-}
-#section-4 .slideshow .jcarousel-prev,
-#section-5 .slideshow .jcarousel-prev {top:275px;}
-
-#section-4 .slideshow .jcarousel-next,
-#section-5 .slideshow .jcarousel-next {top:275px;}
-
-#section-4 .slideshow .photo,
-#section-5 .slideshow .photo {
-  bottom: 0;
-  left: 50px;
-  position: absolute;
-}
-#section-4 .slideshow .person,
-#section-5 .slideshow .person {
-  background: url("../img/bg-groomsmen.png") no-repeat scroll 0 0 transparent;
-  bottom: 7px;
-  height: 246px;
-  padding: 25px 50px 40px 70px;
-  position: absolute;
-  right: 0;
-  text-align: left;
-  width: 428px;
-}
-#section-4 .slideshow .person .name,
-#section-5 .slideshow .person .name {
-  color: #555555;
-  font-size: 30px;
-  font-style: italic;
-  margin: 0 0 5px;
-}
-#section-4 .slideshow .person .title,
-#section-5 .slideshow .person .title {
-  color: #999999;
-  font-size: 18px;
-}
-#section-4 .slideshow .person .bio,
-#section-5 .slideshow .person .bio {
-  color: #8F8F8F;
-  font-size: 12px;
-  line-height: 1.5;
-  margin: 30px 0 0;
-}
-
-
-/* Groomsmen */
-#section-4 {}
-#section-4 .slideshow .item-1 .photo {}
-#section-4 .slideshow .item-2 .photo {left: 60px;}
-#section-4 .slideshow .item-3 .photo {left: 40px;}
-#section-4 .slideshow .item-4 .photo {left: 20px;}
-#section-4 .slideshow .item-5 .photo {bottom: 110px; left: 10px;}
-#section-4 .slideshow .item-6 .photo {left: 42px;}
-
-
-/* Bridesmaids */
-#section-5 {}
-#section-5 .slideshow-control li:hover,
-#section-5 .slideshow-control li.active {
-  background-position:0 -40px;
-  color:#ffffff;
-}
-#section-5 .slideshow .item-1 .photo {}
-#section-5 .slideshow .item-2 .photo {}
-#section-5 .slideshow .item-3 .photo {left:0px;}
-#section-5 .slideshow .item-4 .photo {left: 30px;}
-#section-5 .slideshow .item-5 .photo {bottom: 110px; left: 0px;}
-#section-5 .slideshow .item-6 .photo {}
-#section-5 .slideshow .person {background: url("../img/bg-bridesmaids.png") no-repeat scroll 0 0 transparent;}
-
 /* INFO - When, Where, How */
-#section-6 {background: none repeat scroll 0 0 transparent;}
+#section-4 {background: none repeat scroll 0 0 transparent;}
 .box1-top {
   background: url("../img/bg-box1-top.png") no-repeat scroll center top transparent;
   margin: 0 auto 15px;
@@ -428,8 +338,8 @@ p {
   width: 731px;
 }
 
-#section-6 h3 {
-  color: #8A0000;
+#section-4 h3 {
+  color: #012847;
   font-family: Arial;
   font-family: 'KnockoutHTF48-Featherweight';
   font-size: 40px;
@@ -440,8 +350,74 @@ p {
   width: 579px;
 }
 
+
+/* Why The OBX */
+#section-5 h2 {
+  left: 400px;
+  position: absolute;
+  top:0;
+}
+#section-5 .slideshow {
+  height: 475px;
+  margin: 0 auto;
+  padding: 0 20px 0 10px;
+  width: 770px;
+}
+#section-5 .slideshow li {
+  height: 475px;
+  list-style: none outside none;
+  position:relative;
+  width: 770px;
+}
+#section-5 .slideshow .jcarousel-prev {top:275px;}
+
+#section-5 .slideshow .jcarousel-next {top:275px;}
+
+#section-5 .slideshow .photo {
+  bottom: 0;
+  left: 50px;
+  position: absolute;
+}
+#section-5 .slideshow .person {
+  background: url("../img/bg-groomsmen.png") no-repeat scroll 0 0 transparent;
+  bottom: 7px;
+  height: 246px;
+  padding: 25px 50px 40px 70px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  width: 428px;
+}
+#section-5 .slideshow .person .name {
+  color: #555555;
+  font-size: 30px;
+  font-style: italic;
+  margin: 0 0 5px;
+}
+#section-5 .slideshow .person .title {
+  color: #999999;
+  font-size: 18px;
+}
+#section-5 .slideshow .person .bio {
+  color: #8F8F8F;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 30px 0 0;
+}
+
+
+/* Why The OBX */
+#section-5 {}
+#section-5 .slideshow .item-1 .photo {}
+#section-5 .slideshow .item-2 .photo {left: 60px;}
+#section-5 .slideshow .item-3 .photo {left: 40px;}
+#section-5 .slideshow .item-4 .photo {left: 20px;}
+#section-5 .slideshow .item-5 .photo {bottom: 110px; left: 10px;}
+#section-5 .slideshow .item-6 .photo {left: 42px;}
+
+
 /* Gifts */
-#section-7 {background: none repeat scroll 0 0 transparent;}
+#section-6 {background: none repeat scroll 0 0 transparent;}
 .box2-top {
   background: url("../img/bg-box2-top.png") no-repeat scroll center top transparent;
   margin: 15px auto 0;

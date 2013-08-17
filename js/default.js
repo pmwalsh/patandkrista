@@ -111,7 +111,7 @@ $(function(){
   
   
   
-  // Photos Slideshot
+  // Photos Slideshow
   $('#section-3 .slideshow').jcarousel({
     scroll: 1,
     animation: 500,
@@ -141,47 +141,17 @@ $(function(){
   $('#section-3 .slideshow-control').width( ($('#section-3 .slideshow-control li').length * 30) + 'px');
 
   
-  // Groomsmen Slideshow
-  $('#section-4 .slideshow').jcarousel({
-    scroll: 1,
-    animation: 500,
-    easing: 'easeInOutSine',
-    wrap: 'last',
-    initCallback: grooms_initCallback,
-    itemVisibleInCallback: grooms_activeSlide,
-  });
-    
-  function grooms_initCallback(carousel) {
-    $('#section-4 .slideshow-control li').bind('click', function() {
-      $('#section-4 .slideshow-control li').removeClass('active');  
-      $(this).addClass('active');  
-      carousel.scroll($.jcarousel.intval($(this).text()));
-      
-      return false;
-    });
-  };
-
-  function grooms_activeSlide(carousel, object, intval, state) {
-    intval--;
-    $('#section-4 .slideshow-control li').removeClass('active');
-    $('#section-4 .slideshow-control li:eq('+intval+')').addClass('active');
-    
-  }
-  
-  $('#section-4 .slideshow-control').width( ($('#section-4 .slideshow-control li').length * 30) + 'px');
-  
-
-  // Bridesmaids Slideshow
+  // Why OBX Slideshow
   $('#section-5 .slideshow').jcarousel({
     scroll: 1,
     animation: 500,
     easing: 'easeInOutSine',
     wrap: 'last',
-    initCallback: brides_initCallback,
-    itemVisibleInCallback: brides_activeSlide,
+    initCallback: whyOBX_initCallback,
+    itemVisibleInCallback: whyOBX_activeSlide,
   });
     
-  function brides_initCallback(carousel) {
+  function whyOBX_initCallback(carousel) {
     $('#section-5 .slideshow-control li').bind('click', function() {
       $('#section-5 .slideshow-control li').removeClass('active');  
       $(this).addClass('active');  
@@ -191,15 +161,13 @@ $(function(){
     });
   };
 
-  function brides_activeSlide(carousel, object, intval, state) {
+  function whyOBX_activeSlide(carousel, object, intval, state) {
     intval--;
     $('#section-5 .slideshow-control li').removeClass('active');
     $('#section-5 .slideshow-control li:eq('+intval+')').addClass('active');
     
   }
-
-  $('#section-5 .slideshow-control').width( ($('#section-5 .slideshow-control li').length * 30) + 'px');
-
   
-
+  $('#section-5 .slideshow-control').width( ($('#section-5 .slideshow-control li').length * 30) + 'px');
+  
 });
