@@ -143,7 +143,7 @@ p {
 
 /* Navigation */
 #menu {
-  height: 67px;
+  height: 83px;
   margin: 0 auto;
   width: 1000px;
 }
@@ -156,10 +156,13 @@ p {
 #menu .nav li {
   display: inline;
   float: left;
-  margin: 22px 49px 0 0;
+  margin: 32px 49px 0 0;
+}
+#menu .nav li.first {
+  margin: 5px 49px 0 0;
 }
 #menu .nav li.last {
-  margin: 22px 0 0 0;
+  margin: 32px 0 0 0;
 }
 #menu .nav li a {
   display: block;
@@ -167,37 +170,37 @@ p {
   overflow: hidden;
   padding-top: 30px;
 }
+#menu .nav li h3 {
+  visibility: hidden;
+}
 #menu #nav-logo a {
-  background: url("../img/bg-menu.png") no-repeat scroll -104px -22px transparent;
-  width: 31px;
+  background: url("../img/bg-menu.png") no-repeat scroll -141px -1px transparent;
+  width: 90px;
+  height: 83px;
 }
 #menu #nav-our-story a {
-  background: url("../img/bg-menu.png") no-repeat scroll -183px -22px transparent;
-  width: 57px;
+  background: url("../img/bg-menu.png") no-repeat scroll -290px -32px transparent;
+  width: 58px;
 }
 #menu #nav-photos a {
-  background: url("../img/bg-menu.png") no-repeat scroll -289px -22px transparent;
+  background: url("../img/bg-menu.png") no-repeat scroll -397px -32px transparent;
   width: 42px;
 }
 #menu #nav-info a {
-  background: url("../img/bg-menu.png") no-repeat scroll -380px -22px transparent;
+  background: url("../img/bg-menu.png") no-repeat scroll -478px -32px transparent;
   width: 102px;
 }
 #menu #nav-whyOBX a {
-  background: url("../img/bg-menu.png") no-repeat scroll -497px -22px transparent;
-  width: 68px;
+  background: url("../img/bg-menu.png") no-repeat scroll -617px -32px transparent;
+  width: 60px;
 }
 #menu #nav-gifts a {
-  background: url("../img/bg-menu.png") no-repeat scroll -611px -22px transparent;
-  width: 29px;
-}
-#menu #nav-bridesmaid a {
-  background: url("../img/bg-menu.png") no-repeat scroll -762px -22px transparent;
-  width: 70px;
+  background: url("../img/bg-menu.png") no-repeat scroll -708px -32px transparent;
+  width: 31px;
 }
 #menu #nav-rsvp a {
-  background: url("../img/bg-menu.png") no-repeat scroll -840px -22px transparent;
-  width: 27px;
+  background: url("../img/bg-menu.png") no-repeat scroll -787px -32px transparent;
+  width: 28px;
 }
 
 /* Generic slideshow styles */
@@ -280,7 +283,8 @@ p {
 #section-1 {
   background: url("../img/lighthouse_banner_edited.jpg") no-repeat scroll center 80px #CFCFCF;
   height: 563px;
-  padding-top: 67px;
+  padding-top: 83px;
+  margin-top: 16px;
 
 }
 #section-1 .wrap {
@@ -314,6 +318,11 @@ p {
   height: 505px;
   list-style: none outside none;
   width: 853px;
+}
+
+#section-3 .slideshow li img {
+  height: 505px;
+  width: 700px; /* change this to be just less than 853 (the frame width) after making 505px height dimension calculations */
 }
 
 
@@ -379,7 +388,7 @@ p {
   position: absolute;
 }
 #section-5 .slideshow .person {
-  background: url("../img/bg-groomsmen.png") no-repeat scroll 0 0 transparent;
+  background: url("../img/bg-whyOBX.png") no-repeat scroll 0 0 transparent;
   bottom: 7px;
   height: 246px;
   padding: 25px 50px 40px 70px;
