@@ -304,7 +304,7 @@ p {
 }
 #section-2 {
   background: none repeat scroll 0 0 transparent;
-  padding: 110px 0 0 50px;
+  padding: 110px 0 0 0;
 }
 
 
@@ -422,10 +422,13 @@ p {
 #section-5 {}
 #section-5 .slideshow .item-1 .photo {}
 #section-5 .slideshow .item-2 .photo {left: 60px;}
-#section-5 .slideshow .item-3 .photo {left: 40px;}
-#section-5 .slideshow .item-4 .photo {left: 20px;}
-#section-5 .slideshow .item-5 .photo {bottom: 110px; left: 10px;}
-#section-5 .slideshow .item-6 .photo {left: 42px;}
+#section-5 .slideshow .item-3 .photo {left: 60px;}
+#section-5 .slideshow .item-4 .photo {left: 60px;}
+#section-5 .slideshow .item-5 .photo {left: 60px;}
+#section-5 .slideshow .item-6 .photo {left: 60px;}
+#section-5 .slideshow .item-7 .photo {left: 60px;}
+#section-5 .slideshow .item-8 .photo {left: 60px;}
+#section-5 .slideshow .item-9 .photo {left: 60px;}
 
 
 /* Gifts */
