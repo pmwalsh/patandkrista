@@ -277,11 +277,36 @@ p {
   text-align: center;
   width: 1000px;
 }
+
+.wrap2 {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 0 15px;
+  position: relative;
+  text-align: center;
+  width: 1000px;
+  position: relative;
+}
+
+#img1 {
+  width: 100%;
+  height: 100%;
+}
+
+#img2 {
+  position: absolute;
+  top: 730px;  
+  left: 266px;
+  width: 462px;
+  height: 342px;
+}
+
 .section {
   background: url("../img/bg-section.png") repeat-x scroll 0 396px transparent;
   padding: 110px 0 50px;
   position:relative;
 }
+
 #section-1 {
   background: url("../img/lighthouse_banner_edited.jpg") no-repeat scroll center 80px #CFCFCF;
   height: 563px;
@@ -306,7 +331,6 @@ p {
   background: none repeat scroll 0 0 transparent;
   padding: 110px 0 0 0;
 }
-
 
 /* Photos */
 #section-3 {}
