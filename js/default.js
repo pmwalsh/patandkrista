@@ -171,3 +171,35 @@ $(function(){
   $('#section-5 .slideshow-control').width( ($('#section-5 .slideshow-control li').length * 30) + 'px');
   
 });
+
+function divPic1() {
+  document.getElementById('img2').innerHTML = "<img src='img/section-2c-1.png' />";
+}
+  
+function divPic2() {
+  document.getElementById('img2').innerHTML = "<img src='img/section-2c-2.png' />";
+}
+  
+function divPic3() {
+  document.getElementById('img2').innerHTML = "<img src='img/section-2c-3.png' />";
+}
+  
+function divPic4() {
+  document.getElementById('img2').innerHTML = "<img src='img/section-2c-4.png' />";
+}
+  
+function divPic5() {
+  document.getElementById('img2').innerHTML = "<img src='img/section-2c-5.png' />";
+}
+  
+function divPic6() {
+  document.getElementById('img2').innerHTML = "<img src='img/section-2c-6.png' />";
+}
+  
+function divPic7() {
+  document.getElementById('img2').innerHTML = "<img src='img/section-2c-7.png' />";
+}
+  
+function divPic8() {
+  document.getElementById('img2').innerHTML = "<img src='img/section-2c-8.png' />";
+}

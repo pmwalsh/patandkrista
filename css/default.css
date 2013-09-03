@@ -301,6 +301,78 @@ p {
   height: 342px;
 }
 
+#button1 {
+  position: absolute;
+  cursor: pointer;
+  top: 610px;  
+  left: 600px;
+  width: 40px;
+  height: 40px;
+}
+
+#button2 {
+  position: absolute;
+  cursor: pointer;
+  top: 777px;  
+  left: 755px;
+  width: 40px;
+  height: 40px;
+}
+
+#button3 {
+  position: absolute;
+  cursor: pointer;
+  top: 1000px;  
+  left: 745px;
+  width: 40px;
+  height: 40px;
+}
+
+#button4 {
+  position: absolute;
+  cursor: pointer;
+  top: 1155px;  
+  left: 580px;
+  width: 40px;
+  height: 40px;
+}
+
+#button5 {
+  position: absolute;
+  cursor: pointer;
+  top: 1145px;  
+  left: 350px;
+  width: 40px;
+  height: 40px;
+}
+
+#button6 {
+  position: absolute;
+  cursor: pointer;
+  top: 977px;  
+  left: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+#button7 {
+  position: absolute;
+  cursor: pointer;
+  top: 750px;  
+  left: 210px;
+  width: 40px;
+  height: 40px;
+}
+
+#button8 {
+  position: absolute;
+  cursor: pointer;
+  top: 597px;  
+  left: 375px;
+  width: 40px;
+  height: 40px;
+}
+
 .section {
   background: url("../img/bg-section.png") repeat-x scroll 0 396px transparent;
   padding: 110px 0 50px;
@@ -452,7 +524,6 @@ p {
 #section-5 .slideshow .item-6 .photo {left: 60px;}
 #section-5 .slideshow .item-7 .photo {left: 60px;}
 #section-5 .slideshow .item-8 .photo {left: 60px;}
-#section-5 .slideshow .item-9 .photo {left: 60px;}
 
 
 /* Gifts */
