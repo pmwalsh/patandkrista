@@ -28,7 +28,7 @@
 
 
 body {
-  background: url("../img/bg-footer.jpg") no-repeat scroll center bottom transparent;
+  background: url("../img/footer-ps.jpg") no-repeat scroll center bottom transparent;
   font-family: georgia;
   padding-bottom: 275px;
 }
@@ -379,10 +379,9 @@ p {
 }
 
 #section-1 {
-  background: url("../img/lighthouse_banner_edited.jpg") no-repeat scroll center 80px #CFCFCF;
+  background: url("../img/banner2-ps.jpg") no-repeat scroll center 80px #CFCFCF;
   height: 563px;
-  padding-top: 83px;
-  margin-top: 16px;
+  padding-top: 67px;
 
 }
 #section-1 .wrap {
@@ -420,7 +419,7 @@ p {
 
 #section-3 .slideshow li img {
   height: 505px;
-  width: 700px; /* change this to be just less than 853 (the frame width) after making 505px height dimension calculations */
+  width: 757px; /* change this to be just less than 853 (the frame width) after making 505px height dimension calculations */
 }
 
 
