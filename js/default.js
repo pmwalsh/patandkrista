@@ -1,5 +1,6 @@
+
 $(document).ready(function() {
-  
+
   /*
    * jQuery Timer Plugin
    * http://www.evanbot.com/article/jquery-timer-plugin/23
@@ -28,21 +29,40 @@ $(document).ready(function() {
   });
 */
 
+$("#rsvp-form1").validate( {
+
+	rules: {
+		code: {
+		  required: true,
+		  minlength:4,
+		  maxlength:4
+		}
+	},
+		   
+	messages: {
+		code: {
+		  required: "*Please enter your RSVP code",
+		  minlength: "*Must be 4 characters",
+		  maxlength: "*Must be 4 characters"
+		}
+	}
+});
+
 // RSVP Form Submit
-$('#rsvp .submit').click(function(){
+$('#code_submit').click(function(){
   $('#rsvp .submit').hide();
 });
 $(function(){
-  $("#rsvp-form").submit(function(){
-      dataString = $("#rsvp-form").serialize();
-      $('#rsvp-form .error').remove()
+  $("#rsvp-form1").submit(function(){
+      dataString = $("#rsvp-form1").serialize();
+      $('#rsvp-form1 .error').remove()
       //var form_html = $("#rsvp-form");
       //console.debug(form_html);
       //$('#rsvp-form').fadeOut();
       
       $.ajax({
         type: "POST",
-        url: "rsvp-process.php",
+        url: "rsvp-process2.php",
         data: dataString,
         dataType: "json",
         success: function(data) {
@@ -96,13 +116,13 @@ $(function(){
   $('#nav-rsvp a, .rsvp-link').click(function(){
     if ( $('#header').hasClass('open') ) {
       $('#header').animate({
-      top: '-=115'
+      top: '-=225'
       }, 750, 'easeInOutCubic');
       $('#header').removeClass('open');
     } 
     else {
       $('#header').animate({
-      top: '+=115'
+      top: '+=225'
       }, 750, 'easeInOutCubic');
       $('#header').addClass('open'); 
     }
@@ -171,6 +191,27 @@ $(function(){
   $('#section-5 .slideshow-control').width( ($('#section-5 .slideshow-control li').length * 30) + 'px');
   
 });
+
+function codecheck() {
+	var val1 = document.getElementById('code').value;
+	var val2 = val1.toUpperCase();
+	var x = val2.substring(0, 2);	
+	var y = val2.substring(val2.length - 2);
+	
+	if (x == "KP" && !isNaN(y)) {
+    	enableButton();
+    } else {
+    	hideButton();
+    }
+}
+
+function enableButton() {
+	document.getElementById("code_submit").style.display = 'block';
+}
+
+function hideButton() {
+	document.getElementById("code_submit").style.display = 'none';
+}
 
 function divPic1() {
   document.getElementById('img2').innerHTML = "<img src='img/section-2c-1.png' />";

@@ -47,7 +47,7 @@ p {
   background: url("../img/bg-menu-shadow.png") repeat-x scroll center bottom transparent;
   padding: 0 0 13px;
   position: fixed;
-  top: -115px;
+  top: -225px;
   width: 100%;
   z-index: 100;
 }
@@ -58,18 +58,18 @@ p {
 #rsvp {
   background: none repeat scroll 0 0 #FEF041;
 	font-family: 'KnockoutHTF29-JuniorLiteweigh';
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   text-transform: uppercase;
 }
 #rsvp .inside {
-  height: 95px;
+  height: 205px;
   margin: 0 0 0 213px;
   overflow: hidden;
   padding: 20px 0 0 166px;
   position: relative;
   text-align: left;
-  width: 800px;
+  width: 1000px;
 }
 #rsvp h2 {
   left: 0;
@@ -99,19 +99,14 @@ p {
 #rsvp .input-wrap {
   display: inline;
   float: left;
-  width: 195px;
-}
-#rsvp label {
-  display: inline;
-  float: left;
-  margin: 0 0 2px;
+  width: 180px;
 }
 #rsvp input.text {
   height: 15px;
   line-height: 15px;
   padding: 0;
   width: 170px;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 #rsvp .submit {
   background: url("../img/btn-submit.png") no-repeat scroll 0 0 transparent;
@@ -121,10 +116,44 @@ p {
   margin: 16px 0 0;
   padding-top: 19px;
   width: 56px;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
-
-
+#code_section {
+	visibility: visible;
+}
+#code_submit {
+	display: none;
+}
+#guest_name1 {
+	visibility: hidden;
+}
+#attending1 {
+	visibility: hidden;
+}
+#rehearsal1 {
+	visibility: hidden;
+}
+#entree1 {
+	visibility: hidden;
+}
+#lodging {
+	visibility: hidden;
+}
+#guest_name2 {
+	visibility: hidden;
+}
+#attending2 {
+	visibility: hidden;
+}
+#rehearsal2 {
+	visibility: hidden;
+}
+#entree2 {
+	visibility: hidden;
+}
+#guest_submit {
+	visibility: hidden;
+}
 
 
 #rsvp .close-btn {}
@@ -199,7 +228,7 @@ p {
   width: 31px;
 }
 #menu #nav-rsvp a {
-  visibility: hidden;
+  /* visibility: hidden; */
   background: url("../img/bg-menu.png") no-repeat scroll -787px -32px transparent;
   width: 28px;
 }
