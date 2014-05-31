@@ -106,7 +106,7 @@ p {
   line-height: 15px;
   padding: 0;
   width: 170px;
-  /* visibility: hidden; */
+
 }
 #rsvp .submit {
   background: url("../img/btn-submit.png") no-repeat scroll 0 0 transparent;
@@ -116,7 +116,7 @@ p {
   margin: 16px 0 0;
   padding-top: 19px;
   width: 56px;
-  /* visibility: hidden; */
+
 }
 #code_section {
 	visibility: visible;

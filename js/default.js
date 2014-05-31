@@ -55,38 +55,14 @@ $('#code_submit').click(function(){
 $(function(){
   $("#rsvp-form1").submit(function(){
       dataString = $("#rsvp-form1").serialize();
-      $('#rsvp-form1 .error').remove()
-      //var form_html = $("#rsvp-form");
-      //console.debug(form_html);
-      //$('#rsvp-form').fadeOut();
-      
+  
       $.ajax({
         type: "POST",
-        url: "rsvp-process2.php",
+        url: "rsvp-process1.php",
         data: dataString,
         dataType: "json",
         success: function(data) {
-          if ( data.status == 'pass' ) {
-            $('#rsvp-form').fadeOut(function(){
-              
-              $('#rsvp-form').html('<div class="rsvp-received">' +data.response+ '</div>').fadeIn(1000);
-              
-            });
-            
-            myTimer = $.timer(2500,function(){
-            
-              $('#rsvp .rsvp-link').click();
-            
-            });
-                      
-          }
-          else {
           
-            $('#rsvp-form').append('<div class="error">' +data.response+ '</div>');
-            $('#rsvp .submit').fadeIn('500');
-            console.debug(data);
-
-          }
         }
       });
 
