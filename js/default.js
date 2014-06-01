@@ -59,7 +59,7 @@ $(function(){
         data: $(this).serialize(),
         type: 'POST',
         success: function(data) {
-            //alert('form was submitted');
+            //alert('form was submitted successfully');
             //alert(data);
             var array = data.split('/')
             
@@ -136,7 +136,7 @@ $(function(){
         data: $(this).serialize(),
         type: 'POST',
         success: function(data) {
-            //alert('form was submitted');
+            //alert('form was submitted successfully');
             //alert(data);
             document.getElementById('guest_name1').style.display = 'none';
     		document.getElementById('attending1').style.display = 'none';
