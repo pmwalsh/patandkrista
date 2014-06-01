@@ -164,6 +164,9 @@ p {
 #guest_submit {
 	display: none;
 }
+#dual_rsvp {
+	display: none;
+}
 
 
 #rsvp .close-btn {}

@@ -58,22 +58,74 @@ $(function(){
         url: 'rsvp-process1.php',
         data: $(this).serialize(),
         type: 'POST',
-        success: function() {
+        success: function(data) {
             //alert('form was submitted');
             //alert(data);
-            document.getElementById('guest_name1').style.display = 'inline';
-    		document.getElementById('attending1').style.display = 'inline';
-    		document.getElementById('rehearsal1').style.display = 'inline';
-    		document.getElementById('entree1').style.display = 'inline';
-    		document.getElementById('lodging').style.display = 'inline';
-    		document.getElementById('guest_submit').style.display = 'block';
-        }
+            var array = data.split('/')
+            
+            if (array[0] == 0 && array[1] == 1) {
+    			document.getElementById('guest_name1').style.display = 'inline';
+    			document.getElementById("primary_guest").value = array[2];
+    			document.getElementById("primary_guest").readOnly = true;
+    			document.getElementById('attending1').style.display = 'inline';
+    			document.getElementById('rehearsal1').style.display = 'inline';
+    			document.getElementById('entree1').style.display = 'inline';
+    			document.getElementById('lodging').style.display = 'inline';
+    			document.getElementById('guest_submit').style.display = 'block';
+    			document.getElementById("guest_name2").style.display = 'none';
+    			document.getElementById("attending2").style.display = 'none';
+    			document.getElementById("rehearsal2").style.display = 'none';
+    			document.getElementById("entree2").style.display = 'none';
+    			document.getElementById("dual_rsvp").style.display = 'none';
+    		} else if (array[0] == 0 && array[1] == 2) {
+    			document.getElementById('guest_name1').style.display = 'inline';
+    			document.getElementById("primary_guest").value = array[2];
+    			document.getElementById("primary_guest").readOnly = true;
+    			document.getElementById('attending1').style.display = 'inline';
+    			document.getElementById('rehearsal1').style.display = 'inline';
+    			document.getElementById('entree1').style.display = 'inline';
+    			document.getElementById('lodging').style.display = 'inline';
+    			document.getElementById("guest_name2").style.display = 'inline';
+    			document.getElementById("secondary_guest").value = array[3];
+    			document.getElementById("attending2").style.display = 'inline';
+    			document.getElementById("rehearsal2").style.display = 'inline';
+    			document.getElementById("entree2").style.display = 'inline';
+    			document.getElementById("guest_submit").style.display = 'block';
+    			document.getElementById("dual_rsvp").style.display = 'none';
+			} else if (array[0] == 1) {
+				document.getElementById('guest_name1').style.display = 'none';
+    			document.getElementById('attending1').style.display = 'none';
+    			document.getElementById('rehearsal1').style.display = 'none';
+    			document.getElementById('entree1').style.display = 'none';
+    			document.getElementById('lodging').style.display = 'none';
+    			document.getElementById("guest_name2").style.display = 'none';
+    			document.getElementById("attending2").style.display = 'none';
+    			document.getElementById("rehearsal2").style.display = 'none';
+    			document.getElementById("entree2").style.display = 'none';
+    			document.getElementById("guest_submit").style.display = 'none';
+    			document.getElementById("dual_rsvp").style.display = 'block';
+    		} else if (array[0] == "no_code") {
+    			document.getElementById('guest_name1').style.display = 'none';
+    			document.getElementById('attending1').style.display = 'none';
+    			document.getElementById('rehearsal1').style.display = 'none';
+    			document.getElementById('entree1').style.display = 'none';
+    			document.getElementById('lodging').style.display = 'none';
+    			document.getElementById("guest_name2").style.display = 'none';
+    			document.getElementById("attending2").style.display = 'none';
+    			document.getElementById("rehearsal2").style.display = 'none';
+    			document.getElementById("entree2").style.display = 'none';
+    			document.getElementById("guest_submit").style.display = 'none';
+    			document.getElementById("dual_rsvp").style.display = 'none';
+    			alert('Invalid RSVP code. Try again or contact Pat and/or Krista.');
+    		}
+		} 
       });
       e.preventDefault();
   });
 });
 
-// RSVP Form2 Submit
+
+//RSVP Form2 Submit
 $('#guest_submit').click(function(){
   $('#rsvp .submit').hide();
 });
@@ -83,8 +135,21 @@ $(function(){
         url: 'rsvp-process2.php',
         data: $(this).serialize(),
         type: 'POST',
-        success: function() {
-            //#
+        success: function(data) {
+            //alert('form was submitted');
+            //alert(data);
+            document.getElementById('guest_name1').style.display = 'none';
+    		document.getElementById('attending1').style.display = 'none';
+    		document.getElementById('rehearsal1').style.display = 'none';
+    		document.getElementById('entree1').style.display = 'none';
+    		document.getElementById('lodging').style.display = 'none';
+    		document.getElementById("guest_name2").style.display = 'none';
+    		document.getElementById("attending2").style.display = 'none';
+    		document.getElementById("rehearsal2").style.display = 'none';
+    		document.getElementById("entree2").style.display = 'none';
+    		document.getElementById("guest_submit").style.display = 'none';
+    		document.getElementById("dual_rsvp").style.display = 'none';
+    		alert('Thank you for your RSVP submission!');
         }
       });
       e.preventDefault();
