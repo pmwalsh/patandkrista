@@ -130,7 +130,7 @@ $('#guest_submit').click(function(){
   $('#rsvp .submit').hide();
 });
 $(function(){
-  $('#rsvp-form2').submit(function(f){
+  $('#rsvp-form2').submit(function(e){
       $.ajax({
         url: 'rsvp-process2.php',
         data: $(this).serialize(),
@@ -152,7 +152,7 @@ $(function(){
     		alert('Thank you for your RSVP submission!');
         }
       });
-      f.preventDefault();
+      e.preventDefault();
   });
 });
 
