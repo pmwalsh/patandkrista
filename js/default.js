@@ -48,26 +48,46 @@ $("#rsvp-form1").validate( {
 	}
 });
 
-// RSVP Form Submit
+// RSVP Form1 Submit
 $('#code_submit').click(function(){
   $('#rsvp .submit').hide();
 });
 $(function(){
-  $("#rsvp-form1").submit(function(){
-      dataString = $("#rsvp-form1").serialize();
-  
+  $('#rsvp-form1').submit(function(e){
       $.ajax({
-        type: "POST",
-        url: "rsvp-process1.php",
-        data: dataString,
-        dataType: "json",
-        success: function(data) {
-          
+        url: 'rsvp-process1.php',
+        data: $(this).serialize(),
+        type: 'POST',
+        success: function() {
+            //alert('form was submitted');
+            //alert(data);
+            document.getElementById('guest_name1').style.display = 'inline';
+    		document.getElementById('attending1').style.display = 'inline';
+    		document.getElementById('rehearsal1').style.display = 'inline';
+    		document.getElementById('entree1').style.display = 'inline';
+    		document.getElementById('lodging').style.display = 'inline';
+    		document.getElementById('guest_submit').style.display = 'block';
         }
       });
+      e.preventDefault();
+  });
+});
 
-      return false;            
-
+// RSVP Form2 Submit
+$('#guest_submit').click(function(){
+  $('#rsvp .submit').hide();
+});
+$(function(){
+  $('#rsvp-form2').submit(function(e){
+      $.ajax({
+        url: 'rsvp-process2.php',
+        data: $(this).serialize(),
+        type: 'POST',
+        success: function() {
+            //#
+        }
+      });
+      e.preventDefault();
   });
 });
 
@@ -174,7 +194,7 @@ function codecheck() {
 	var x = val2.substring(0, 2);	
 	var y = val2.substring(val2.length - 2);
 	
-	if (x == "KP" && !isNaN(y)) {
+	if (x == "KP" && !isNaN(y) && val2.length == 4) {
     	enableButton();
     } else {
     	hideButton();
@@ -182,11 +202,11 @@ function codecheck() {
 }
 
 function enableButton() {
-	document.getElementById("code_submit").style.display = 'block';
+	document.getElementById('code_submit').style.display = 'block';
 }
 
 function hideButton() {
-	document.getElementById("code_submit").style.display = 'none';
+	document.getElementById('code_submit').style.display = 'none';
 }
 
 function divPic1() {

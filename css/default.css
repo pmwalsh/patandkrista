@@ -101,6 +101,16 @@ p {
   float: left;
   width: 180px;
 }
+#rsvp .input-wrap_primary {
+  /* display: inline; */
+  float: left;
+  width: 180px;
+}
+#rsvp .input-wrap_secondary {
+  /* display: inline; */
+  float: left;
+  width: 180px;
+}
 #rsvp input.text {
   height: 15px;
   line-height: 15px;
@@ -125,34 +135,34 @@ p {
 	display: none;
 }
 #guest_name1 {
-	visibility: hidden;
+	display: none;
 }
 #attending1 {
-	visibility: hidden;
+	display: none;
 }
 #rehearsal1 {
-	visibility: hidden;
+	display: none;
 }
 #entree1 {
-	visibility: hidden;
+	display: none;
 }
 #lodging {
-	visibility: hidden;
+	display: none;
 }
 #guest_name2 {
-	visibility: hidden;
+	display: none;
 }
 #attending2 {
-	visibility: hidden;
+	display: none;
 }
 #rehearsal2 {
-	visibility: hidden;
+	display: none;
 }
 #entree2 {
-	visibility: hidden;
+	display: none;
 }
 #guest_submit {
-	visibility: hidden;
+	display: none;
 }
 
 
