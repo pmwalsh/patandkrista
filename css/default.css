@@ -47,7 +47,7 @@ p {
   background: url("../img/bg-menu-shadow.png") repeat-x scroll center bottom transparent;
   padding: 0 0 13px;
   position: fixed;
-  top: -225px;
+  top: -350px;
   width: 100%;
   z-index: 100;
 }
@@ -63,8 +63,8 @@ p {
   text-transform: uppercase;
 }
 #rsvp .inside {
-  height: 205px;
-  margin: 0 0 0 213px;
+  height: 330px;
+  margin: 0 0 0 75px; /* Originally 213px */
   overflow: hidden;
   padding: 20px 0 0 166px;
   position: relative;
@@ -111,12 +111,23 @@ p {
   float: left;
   width: 180px;
 }
+#rsvp .input-wrap_third {
+  /* display: inline; */
+  float: left;
+  padding: 20px 0 20px 0;
+  width: 500px;
+}
 #rsvp input.text {
   height: 15px;
   line-height: 15px;
   padding: 0;
   width: 170px;
-
+}
+#note {
+  height: 15px;
+  line-height: 15px;
+  padding: 0;
+  width: 300px;
 }
 #rsvp .submit {
   background: url("../img/btn-submit.png") no-repeat scroll 0 0 transparent;
@@ -126,7 +137,15 @@ p {
   margin: 16px 0 0;
   padding-top: 19px;
   width: 56px;
-
+}
+#rsvp .submit2 {
+  background: url("../img/btn-submit.png") no-repeat scroll 0 0 transparent;
+  border: medium none;
+  cursor:pointer;
+  height: 0;
+  margin: 75px 0 0;
+  padding-top: 75px;
+  width: 56px;
 }
 #code_section {
 	visibility: visible;
@@ -135,31 +154,44 @@ p {
 	display: none;
 }
 #guest_name1 {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
 }
 #attending1 {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
 }
 #rehearsal1 {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
 }
 #entree1 {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
 }
 #lodging {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
 }
 #guest_name2 {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
 }
 #attending2 {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
 }
 #rehearsal2 {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
 }
 #entree2 {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
+}
+#note_field {
+	/* display: none; */
+	visibility: hidden;
 }
 #guest_submit {
 	display: none;
